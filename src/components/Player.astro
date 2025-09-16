@@ -1,0 +1,60 @@
+---
+import Logo from "../assets/logo-callasay.png";
+import Earphones from "../assets/SimpleLineIconsEarphones.svg";
+import PopCast from "../assets/Podcast-list-7-650x650.jpg";
+---
+
+<section class="bg-black h-30 w-full flex flex-col justify-center">
+    <div class="grid grid-cols-12 p-2">
+        <div class="lg:col-[1/6] hidden lg:block col-[1/12]">
+            <div class="flex gap-5">
+                <img class="w-20 h-20" src={PopCast.src} alt="Logo" />
+                <div class="flex flex-col justify-center gap-1">
+                    <div class="flex items-center gap-2">
+                        <img
+                            class="w-4 h-4"
+                            src={Earphones.src}
+                            alt="Audifonos"
+                        />
+                        <p class="text-white uppercase text-sm">
+                            Transmisión en vivo
+                        </p>
+                    </div>
+                    <div>
+                        <p class="text-white text-xl font-bold">
+                            Disfruta de la mejor música solo aqui!!!
+                        </p>
+                    </div>
+                    <div
+                        class="flex items-center gap-2 text-white uppercase text-xs"
+                    >
+                        <div>
+                            <p class="font-semibold">Géneros:</p>
+                        </div>
+                        <div class="flex gap-2">
+                            <div class="">
+                                <p class="border-1 border-white rounded-xl py-[0.5px] px-2">
+                                    Variado
+                                </p>
+                            </div>
+                            <div class="">
+                                <p class="border-1 border-white rounded-xl py-[0.5px] px-2">
+                                    Salsa
+                                </p>
+                            </div>
+                            <div class="">
+                                <p class="border-1 border-white rounded-xl py-[0.5px] px-2">
+                                    Bachata
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div></div>
+        </div>
+        <div class="w-full flex justify-center items-center lg:col-[6/-1] col-[1/-1]">
+            <iframe width="100%" height="75" src="https://player.streamseguro.com/radio/callasay2025/" frameborder="0" allowfullscreen data-astro-cid-j7pv25f6></iframe>
+        </div>
+    </div>
+</section>
